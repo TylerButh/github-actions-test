@@ -1,2 +1,2 @@
 def get_fruit():
-    return 10
+    return 12
