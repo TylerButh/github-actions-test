@@ -21,6 +21,6 @@ jobs:
       - name: Install pytest
         run: pip install pytest
       - name: Run mypy
-        run: py.test --mypy --cov=. --cov-report html --ignore=work
+        run: py.test --mypy --ignore=work
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
