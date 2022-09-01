@@ -21,6 +21,7 @@ jobs:
         run: pip install mypy
       - name: Run mypy
         uses: sasanquaneuf/mypy-github-action@releases/v1
+        run: py.test --mypy --ignore=work
         with:
           checkName: 'mypy'   # NOTE: this needs to be the same as the job name
         env:
